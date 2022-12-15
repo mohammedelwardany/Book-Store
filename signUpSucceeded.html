@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign Up Done</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .loader {
+            position: absolute;
+          left: 50%;
+          top: 65%;
+          z-index: 1;
+          width: 120px;
+          height: 120px;
+          margin: -76px 0 0 -76px;
+          border: 16px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 16px solid #FAEBD7;
+          -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+        }
+        
+        /* Safari */
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        </style>
+</head>
+
+<body>
+    <div class="sign-up-form" id="done">
+        <img src="IMG/login-icon-3048.png" alt="log in logo">
+        <h1>Welcome</h1>
+    </div>
+    <div class="loader"></div>
+    <script>
+        function pageRedirect() {
+            window.location.replace("Home.html");
+        }      
+        setTimeout("pageRedirect()", 3000);
+    </script>
+</body>
+
+</html>

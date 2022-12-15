@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .loader{
+	--color: white;
+	--size-mid: 6vmin;
+	--size-dot: 1.5vmin;
+	--size-bar: 0.4vmin;
+	--size-square: 3vmin;
+	
+	display: block;
+	position: relative;
+	width: 50%;
+	display: grid;
+	place-items: center;
+}
+
+.loader::before,
+.loader::after {
+	content: '';
+	box-sizing: border-box;
+	position: absolute;
+}
+
+/**
+	loader --1
+**/
+
+.loader:before,
+.loader:after {
+	width: var(--size-dot);
+	height: var(--size-dot);
+	border-radius: 50%;
+	background-color: var(--color);
+	animation: loader-9 0.42s cubic-bezier(0.39, 0.31, 0, 1.11) infinite;
+}
+
+.loader:before {
+	left: calc(50% - var(--size-dot) - 1.6vmin);
+}
+
+.loader:after {
+	left: calc(50% + 1.6vmin);
+	animation-delay: 0.12s;
+}
+
+@keyframes loader-9 {
+	0%, 100% {
+		opacity: 0;
+	}
+	
+	0% {
+		transform: translate(-4vmin, -4vmin);
+	}
+	
+	66% {
+		opacity: 1;
+	}
+	
+	66%, 100% {
+		transform: none;
+	}
+}
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 18vmin);
+	grid-template-rows: repeat(3, 18vmin);
+	grid-gap: 1vmin;
+}
+
+.item	{
+	background: rgba(255, 255, 255, 0.1);
+	display: grid;
+	place-items: center;
+	border-radius: 4px;
+}
+
+.page {
+	margin: auto;
+}
+
+.header {
+	margin-bottom: 4vmin;
+}
+
+.header-title {
+	font-size: 3.75vmin;
+}
+
+.header-subtitle {
+	font-size: 2vmin;
+	text-transform: uppercase;
+	opacity: 0.6;
+}
+
+html, body {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+	font-family: 'Noto Sans', sans-serif;
+	color: white;
+	text-align: center;
+	letter-spacing: 0.3px;
+}
+</style>
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <h1 class="header-title">Simple CSS loaders</h1>
+            <p class="header-subtitle">single html element css animation</p>
+        </header>
+        
+        <main class="container">
+            <div class="item">
+                <i class="loader --9"></i>
+            </div>
+            </main>
+    </div>
+</body>

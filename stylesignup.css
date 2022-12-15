@@ -1,0 +1,67 @@
+.sign-up-form {
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+    position: relative;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.sign-up-form h1 {
+    color: #ac3b61;
+    margin-bottom: 30px;
+}
+body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("./IMG/wallbaberhome.jpg");
+    background-size: 25%;
+    background-repeat: repeat;
+    position: relative;
+}
+.input-box {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 95%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #ac3b61;
+    color: white
+    
+}
+
+button:hover {
+    background-color:rgb(105, 15, 15);
+    color: #f2f2f2;
+}
+
+hr {
+    margin-top: 20px;
+    width: 80px;
+}
+
+.or {
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10px;
+}
+
+img {
+    width: 80px;
+}

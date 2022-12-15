@@ -1,0 +1,562 @@
+body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    right: 0%;
+    background-image: url("./IMG/wallbaberhome.jpg");
+    background-size: 25%;
+    background-repeat: repeat;
+    position: relative;
+}
+
+
+/*Button login*/
+
+.signcont {
+    position: absolute;
+    float: right;
+    right: 75px;
+    top: 40px;
+}
+
+.signbutton {
+    background-color: #f2f2f2;
+    position: relative;
+    width: 120px;
+    height: fit-content;
+    text-align: center;
+    color: #333;
+    border-radius: 20px;
+    font-size: 15pt;
+    margin: 3px;
+    z-index: 4;
+    display: inline-block;
+}
+
+.signbutton:hover {
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+.signbutton-content {
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.signbutton-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.signbutton:hover .signbutton-content {
+    display: block;
+}
+
+
+/* Topper */
+
+.Topper {
+    background-color: #f2f2f2;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+}
+
+p.logotext {
+    font-size: 40px;
+    color: blue;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 5px;
+}
+
+.logo_text {
+    font-size: 30px;
+    font-family: "Segoe UI Emoji";
+    line-height: 0.2;
+    text-align: left;
+    position: relative;
+    left: 100 px;
+    top: 6px;
+    z-index: 4;
+    padding: 5px;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    padding: 0px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #edc7b7;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: rgb(255, 7, 110);
+    ;
+    color: white;
+}
+
+
+/* Page Content*/
+
+
+/*slide show*/
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    position: relative;
+    padding: 0%;
+    width: 100%;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/*cont.*/
+
+.page-content {
+    min-height: 300px;
+    margin: 30px;
+}
+
+.advertise {
+    background-image: url(./IMG/discripe111.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+}
+
+.advertise:hover {
+    opacity: 100%;
+}
+
+
+/* Footer */
+
+.Footer {
+    background-color: #333;
+    color: white;
+    height: 400px;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+
+/* Dummy space*/
+
+.Footer .Footer-space {
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+
+/*Content*/
+
+.Footer-content {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.Footer .Img {
+    width: 120px;
+    height: 120px;
+    float: left;
+    padding: 50px;
+    padding-left: 30px;
+    padding-top: 60px;
+}
+
+
+/* vertical line*/
+
+.val {
+    border-right: 1px solid grey;
+    position: absolute;
+    left: 300px;
+    height: 250px;
+    top: 40px;
+}
+
+
+/*Text*/
+
+.tttxxxttt {
+    font-size: 60px;
+    font-family: "Bauhaus 93";
+    color: rgb(252, 205, 232);
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.Footer-LPE {
+    float: left;
+    padding: 40px;
+    padding-top: 20px;
+}
+
+.Footer a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.Footer-LPE a:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+.LPE-cont {
+    float: left;
+    padding: 10px;
+}
+
+.icon {
+    float: left;
+    width: 50px;
+    height: 50px;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+.LPE-cont p {
+    margin: 15px;
+    margin-top: 25px;
+    padding-left: 5px;
+    float: left;
+    font-size: 25px;
+}
+
+.LPE-cont .Footer-text1 {
+    margin: 15px;
+    margin-top: 10px;
+    padding-left: 5px;
+    float: left;
+    font-size: 25px;
+}
+
+
+/* Purchase methods*/
+
+.purchase-methods {
+    width: 120px;
+    height: 100px;
+    float: left;
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.purchase-methods p {
+    float: left;
+    font-size: 20px;
+    padding-left: 12px;
+}
+
+.PM-icon {
+    width: 100px;
+    height: 55px;
+    padding: 10px;
+    filter: grayscale(100%);
+}
+
+.PM-icon:hover {
+    filter: none !important;
+}
+
+
+/*Contact us*/
+
+.Contact-us {
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 70px;
+    padding-top: 70px;
+}
+
+.Social {
+    float: left;
+    font-size: 20px;
+    padding-left: 70px;
+    text-align: center;
+}
+
+.CU-adjust {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+.CU-icon-FB {
+    width: 70px;
+    height: 70px;
+    filter: grayscale(100%);
+}
+
+.CU-icon-Inst {
+    width: 50px;
+    height: 50px;
+    filter: grayscale(100%);
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.CU-icon-YT {
+    width: 50px;
+    height: 70px;
+    filter: grayscale(100%);
+}
+
+.CU-adjust img:hover {
+    filter: none !important;
+}
+
+
+/*Card Code*/
+
+.hh {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 13px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 150px 200px 80px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    font-family: roboto;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 30px;
+}
+
+
+/* link decoration remove */
+
+.hh a {
+    text-decoration: none;
+}
+
+.card-image {
+    grid-area: image;
+}
+
+.card-text {
+    grid-area: text;
+}
+
+.card-stats {
+    grid-area: stats;
+}
+
+.card-image {
+    grid-area: image;
+    background: url("./img/rome.jpg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+    text-decoration: none;
+}
+
+.card-text .date {
+    color: rgb(255, 7, 110);
+    font-size: 13px;
+}
+
+.card-text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card-stats {
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(255, 7, 110);
+}
+
+.card-stats .stat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
